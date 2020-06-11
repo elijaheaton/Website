@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <title>My First Website</title>
+    <style>
+      h1, p {
+        text-align: center
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Elijah Eaton</h1>
+    <p>Hello World!</p>
+  </body>
+</HTML>
