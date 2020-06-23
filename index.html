@@ -1,34 +1,145 @@
 <!DOCTYPE HTML>
   <head>
-    <title>Elijah Eaton</title>
+    <title>elijah eaton</title>
     <style>
       body {
-        background-image: url('unsplash-nature01.jpg');
-        background-size: cover;
+        margin: 0;
+        padding-top: 0px;
+        background-color: lightgray;
+        font-family: Georgia, times, "Times New Roman", serif;
         background-position: center center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: gray;
-        font-family: Georgia, times, "Times New Roman", serif;
-        text-align: center;
       }
       h1 {
+        margin: 0;
         font-style: oblique;
         font-size: 10vw;
+        padding-top: 5%;
+        text-align: center;
+      }
+      h2 {
+        margin: 10px;
+        font-style: oblique;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
       }
       h3 {
-        font-family: Georgia, times, "Times New Roman", serif;
         font-style: italic;
+        padding-top: 5px;
+        text-align: center;
       }
-      a {
-        color: black;
+      .parallax {
+        min-height: 700px;
+        background-size: cover;
+        background-attachment: fixed;
       }
-
+      .image03 {
+        background-image: url('unsplash-nature01.jpg')
+      }
+      .image02 {
+        background-image: url('unsplash-nature02.jpg')
+      }
+      .image01 {
+        background-image: url('unsplash-nature03.jpg')
+      }
+      .banner {
+        height: 500px;
+        background-color: lightgray;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #36454f;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 100px;
+      }
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidenav a:hover {
+        color: lightgray;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
     </style>
   </head>
   <body>
-    <h1>Elijah Eaton</h1>
-    <h3>Hi! I'm a software developer currently studying at Johns Hopkins University.</h3>
-    <h3>Check out what I'm working on over here on <a href="https://www.github.com/elijaheaton">github!</a></h3>
+    <div class="parallax image01">
+      <div id="sidenavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times</a>
+        <a href="index.html">home</a>
+        <a href="https://www.github.com/elijaheaton">github</a>
+        <a href="https://www.instagram.com/elijah_eaton">instagram</a>
+      </div>
+      <span style="font-size:2.5vw;cursor:pointer;top:100px;float:right;"
+       onclick="openNav()">
+        &laquo; check me out &nbsp;
+      </span>
+      <h1>elijah eaton</h1>
+      <h3>
+        hi! i'm a software developer,
+      </h3>
+      <h3>
+        currently studying at johns hopkins university
+      </h3>
+    </div>
+    <div class="banner">
+      <h3 style="padding-top:10%">
+        i love learning about data science, machine learning,
+      </h3>
+      <h3>
+        web development, databases, and languages.
+      </h3>
+      <h3>
+        ask me about my work in python, html, css, java, and matlab.
+      </h3>
+      <h3>
+        or check it out for yourself at my <a href="www.github.com/elijaheaton"
+                                            style="color:black">github!</a>
+      </h3>
+    </div>
+    <div class="parallax image02"></div>
+    <div class="banner">
+      <h2>ask me about my recent adventures!</h2>
+      <h3>i just started an internship at johns hopkins applied physics lab</h3>
+      <h3>i've been getting more successful at baking during quarantine</h3>
+      <h3>i recently contracted into the united states army</h3>
+      <h3>i am encouraged by the facebook group programming memes for object-oriented teens</h3>
+      <h3>i've been a big sudoku fan for a long time</h3>
+    </div>
+    <div class="parallax image03"></div>
+    <div class="banner">
+      <h3 style="padding:10%">let me know if you'd like to contact me!</h3>
+      <h3>email coming soon...</h3>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidenavigation").style.width="250px";
+      }
+      function closeNav() {
+        document.getElementById("sidenavigation").style.width="0";
+      }
+    </script>
   </body>
 </HTML>
