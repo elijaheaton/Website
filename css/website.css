@@ -1,0 +1,66 @@
+body {
+	background-color: #D1E8E2;
+	color: #116466;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	padding-bottom: 15px;
+}
+
+hr {
+	border-top: 1px solid #D9B08C;
+}
+
+.links {
+	text-align: center;
+}
+
+a {
+	color: #116466;
+}
+
+a:hover {
+	color: #D9B08C;
+}
+
+.name {
+	font-weight: bold;
+	color: #116466;
+	text-align: center;
+	margin: 50px auto 50px;
+}
+
+.description {
+	text-align: justify;
+}
+
+.spacer {
+	background-color: #D9B08C;
+	padding: 30px;
+	margin: 40px 0 90px 0;
+}
+
+.designed {
+	font-size: 5%;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+}
+
+.img-dsc {
+	text-align: center;
+	font-size: 0.75em;
+}
+
+.minesweep-link:hover {
+	color: #116466;
+	font-weight: bold;
+}
+
+.classes {
+	font-weight: bold;
+	margin: 0 auto 40px;
+	text-align: center;
+}
