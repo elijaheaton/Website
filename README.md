@@ -1,4 +1,4 @@
-# website
-My personal website
+# Website
+My personal website!
 
 https://elijaheaton.com/
