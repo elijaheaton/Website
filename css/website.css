@@ -1,6 +1,12 @@
+:root {
+	--primary: #FEFFFF;
+	--secondary: #2B7A78;
+	--tertiary: #3AAFA9;
+}
+
 body {
-	background-color: #D1E8E2;
-	color: #116466;
+	background-color: var(--primary);
+	color: var(--secondary);
 }
 
 img {
@@ -10,7 +16,7 @@ img {
 }
 
 hr {
-	border-top: 1px solid #D9B08C;
+	border-top: 1px solid var(--tertiary);
 }
 
 .links {
@@ -18,16 +24,16 @@ hr {
 }
 
 a {
-	color: #116466;
+	color: var(--secondary);
 }
 
 a:hover {
-	color: #D9B08C;
+	color: var(--tertiary);
 }
 
 .name {
 	font-weight: bold;
-	color: #116466;
+	color: var(--secondary);
 	text-align: center;
 	margin: 50px auto 50px;
 }
@@ -37,7 +43,7 @@ a:hover {
 }
 
 .spacer {
-	background-color: #D9B08C;
+	background-color: var(--tertiary);
 	padding: 30px;
 	margin: 40px 0 90px 0;
 }
@@ -55,7 +61,7 @@ a:hover {
 }
 
 .minesweep-link:hover {
-	color: #116466;
+	color: var(--secondary);
 	font-weight: bold;
 }
 
