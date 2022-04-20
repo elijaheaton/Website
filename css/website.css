@@ -25,6 +25,7 @@ hr {
 
 a {
 	color: var(--secondary);
+	text-decoration: underline; 
 }
 
 a:hover {
