@@ -76,5 +76,18 @@ a:hover {
 	text-decoration: none;
 }
 .no-decoration:hover {
-	color:white;
+	color: var(--primary);
+}
+
+.header {
+	background: var(--primary);
+}
+
+.content {
+	margin-top: 30px;
+}
+
+.footer {
+	background: var(--primary);
+	text-align: center;
 }

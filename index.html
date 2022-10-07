@@ -14,13 +14,13 @@
   <body>
     <div class="container-fluid">
       <!-- Header -->
-      <div class="header pt-5 ml-5 mr-5 pl-3 pr-3">
+      <div class="header pl-3 pr-3 fixed-top" style="top:0;" id="header">
         <div class="row" style="display:inline;">
           <!-- Name, External Links -->
 
           <div class="name" style="position:relative;">
             <!-- Name -->
-            <h1 class="text-center text-bold" style="font-size: 5rem;">Elijah Eaton</h1>
+            <h1 id="name" class="text-center text-bold" style="font-size: 5rem; transition:0.4s; white-space:nowrap;">Elijah Eaton</h1>
 
 
             <div class="contacts" style="position:absolute;right:0;top:0;">
@@ -48,144 +48,91 @@
           
 
         </div>
-        <!--div class="row pt-2 pb-4 text-center">
-          <-- Internal Links ->
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6">
-            <a href="/">Home</a>
-            <a href="/education">Experience</a>
-            <a href="/interests">Interests</a>
-          </div>
-          <div class="col-sm-3"></div>
-        </div-->
       </div>
       
       <!-- Banner -->
-      <div class="row ml-2 mr-2">
-        <img src="baltimore.jpeg">
+      <div id="banner" class="row ml-2 mr-2 pt-5" style="margin-top:200px;">
+        <img src="baltimore.jpeg" alt="I usually put a picture of my hometown here. I wonder why it's not showing up...">
       </div>
 
-      <div class="row">
-        <h2>Who am I?</h2>
-        <p>
-          I'm a recent graduate from Johns Hopkins, where I studied Computer Science. I'm currently working fulltime in the Army 
-          until my training is over in January. Then I'm moving to Philadelphia to start work for Capital One in Software Development.
-        </p>
-        <p>Want to learn some more?</p>
-      </div>
-
-      <div class="row">
-        <h2>Experience</h2>
-        <p>Experience goes here.</p>
-        <div class="row spacer">
-          <div class="col-sm-12 classes">Classes I've taken</div>
-          <div class="col-lg-10">Gateway Computing: Java</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Intermediate Programming</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Data Structures</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Computer System Fundamentals</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Automata and Computation Theory</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Object Oriented Software Engineering</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Introduction to Algorithms</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Databases</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Software for Resilient Communities</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Compilers and Interpreters</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Computer Ethics</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Computer Networks</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">User Interfaces and Mobile Applications</div><div class="col-lg-2">(JHU)</div>
-          <div class="col-lg-10">Machine Learning</div><div class="col-lg-2">(Stanford)</div>
-          <div class="col-lg-10">Introduction to Data Science in Python</div><div class="col-lg-2">(Michigan)</div>
-          <div class="col-lg-10">Applied Machine Learning in Python</div><div class="col-lg-2">(Michigan)</div>
-          <div class="col-lg-10">Applied Plotting, Charting and Data Representation in Python</div><div class="col-lg-2">(Michigan)</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <h2>Interests</h2>
-        <p>Interests go here.</p>
-        <div class="row spacer">
-          <div class="col-sm-12 classes">My Interests</div>
-          <div class="col-sm-12">Sudoku</div>
-          <div class="col-sm-12">Space Science</div>
-          <div class="col-sm-12">The United States Army</div>
-          <div class="col-sm-12">Programming Memes for Object-Oriented Teens</div>
-          <div class="col-sm-12">Road Trips</div>
-          <div class="col-sm-12">Guitar</div>
-          <div class="col-sm-12">Programming</div>
-          <div class="col-sm-12">Politics</div>
-          <div class="col-sm-12">Rugby</div>
-          <div class="col-sm-12">Breakfast</div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-      <h1 class="name">Elijah Eaton</h1>
       <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-          <div class="row description">
-            <div class="col-sm-12">
-              <p>
-                Hiya! I'm a software engineer, working on things that interest me in my spare time. I've interned at Amazon and JHU APL, but right now my
-                focus is all about <a href="https://www.jhulastchance.com">my new website</a> for seniors to get closure before graduation! Check me out here,
-                there, or anywhere!
-              </p>
+
+          <div class="row content">
+            <h2>Who am I?</h2>
+            <p>
+              I'm a recent graduate from Johns Hopkins, where I studied Computer Science. I'm currently working fulltime in the Army 
+              until my training is over. Then I'm moving to Philadelphia to start work for Capital One in Software Development.
+            </p>
+            
+            <p>
+              I'm from Baltimore, but I've also lived in Lancaster, PA and Claremont, NH. 
+              I'm currently stationed in Fort Sill, Oklahoma until January.
+            </p>
+            
+            <p>
+              Want to learn some more?
+            </p>
+          </div>
+    
+          <div class="row content">
+            <h2>Experience</h2>
+            <hr>
+            <p>Look at a few of the things I've been up to!</p>
+            <div class="row spacer">
+              <div class="col-sm-12 classes">Recent and Upcoming Work</div>
+              <div class="col-lg-7">Incoming Software Developer</div><div class="col-lg-5 text-right">[Capital One]</div>
+              <div class="col-lg-7">Current Field Artillery Officer</div><div class="col-lg-5 text-right">[Maryland ARNG]</div>
+              <div class="col-lg-7">Recent Graduate</div><div class="col-lg-5 text-right" >[Johns Hopkins]</div>
+              <div class="col-lg-7">Former Software Development Intern</div><div class="col-lg-5 text-right">[Amazon]</div>
+              <div class="col-lg-7">Former Machine Learning Intern</div><div class="col-lg-5 text-right">[Johns Hopkins APL]</div>
             </div>
           </div>
-          <hr>
-          <div class="row">
-            <div class="col-lg-2 col-sm-4 links font-weight-bold">
-              <a href="#">Home</a>
-            </div>
-            <div class="col-lg-2 col-sm-4 links">
-              <a href="education.html">Education</a>
-            </div>
-            <div class="col-lg-2 col-sm-4 links">
-              <a href="interests.html">Interests</a>
-            </div>
-            <div class="col-lg-2 col-sm-4 links">
-              <a href="https://www.github.com/elijaheaton" target="_blank" rel="noopener noreferrer">Github</a>
-            </div>
-            <div class="col-lg-2 col-sm-4 links">
-              <a href="https://www.linkedin.com/in/elijaheaton" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-            <div class="col-lg-2 col-sm-4 links">
-              <a href="https://www.instagram.com/elijah_eaton" target="_blank" rel="noopener noreferrer">Instagram</a>
+    
+          <div class="row content">
+            <h2>Interests</h2>
+            <hr>
+            <p>This is where you can learn a little more about me!</p>
+            <div class="row spacer">
+              <div class="col-sm-12 classes">My Interests</div>
+              <div class="col-sm-6">Sudoku</div>
+              <div class="col-sm-6">Space Science</div>
+              <div class="col-sm-6">The United States Army</div>
+              <div class="col-sm-6">Programming Memes for Object-Oriented Teens</div>
+              <div class="col-sm-6">Road Trips</div>
+              <div class="col-sm-6">Guitar</div>
+              <div class="col-sm-6">Programming</div>
+              <div class="col-sm-6">Politics</div>
+              <div class="col-sm-6">Rugby</div>
+              <div class="col-sm-6">Breakfast</div>
             </div>
           </div>
-          <hr>
-          <div class="row spacer">
-            <img src='minesweep-code.png' alt='Some of my code!'>
-            <div class="col-sm-12 img-dsc">
-              This is some code I wrote for my MineSweep.py game that you can find 
-              <a href="https://github.com/elijaheaton/MineSweep" class="minesweep-link">here!</a>
+      
+          <div class="row content">
+            <h2>Places I've Been</h2>
+            <hr>
+            <p>I'm excited to get more filled out!</p>
+            <div class="row spacer">
+              <div class="col-sm-12 classes">The United States</div>
+              <img src="america.png" alt="Whoops, where did it go?">
+              <div class="col-sm-12 classes">The World</div>
+              <img src="world.png" alt="Whoops, this is embarrassing...">
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-12 designed">2022 | Elijah Eaton</div>
           </div>
-        </div>
+
+
         <div class="col-sm-2"></div>
+
+      </div>
+
+      <div class="row fixed-bottom p-4 footer">
+        <div class="col-sm-12">Elijah Eaton | 2022</div>
       </div>
     </div>
-  -->
-  </body>
+
+
+  <script src="js/website.js"></script>
+</body>
 </HTML>
