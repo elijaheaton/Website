@@ -14,7 +14,6 @@ function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         name.style.width = "0";
         name.style.fontSize = smaller;
-        console.log(name.style.fontsize);
         banner.style.marginTop = header.offsetHeight.toString() + "px";
     } else {
         name.style.width = "100%";
@@ -30,7 +29,7 @@ function size(media) {
     }
     else {
         smaller = "2rem";
-        larger = "4rem";
+        larger = "3.5rem";
     }
 }
 

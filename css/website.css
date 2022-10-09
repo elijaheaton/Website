@@ -81,6 +81,7 @@ a:hover {
 
 .header {
 	background: var(--primary);
+	padding-top: 15px;
 }
 
 .content {
@@ -113,7 +114,25 @@ h4 {
 	width: 30px;
 }
 
-@media (max-width: 768px) {  
+.moving {
+	text-align: right;
+}
+
+
+#showoff {
+	background-image: url("../img/baltimore.webp");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: -webkit-fill-available;
+	height: 393px;
+}
+
+@media (max-width: 767px) {  
 	.icon {height:20px;width:20px;}
 	.name {padding-top:40px;}
+	.moving {text-align:left;padding-bottom:20px;}
+	#showoff {
+		background-image: url("../img/uniform.webp");
+		height: 450px;
+	}
 }
