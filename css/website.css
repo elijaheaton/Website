@@ -46,6 +46,7 @@ a:hover {
 	background-color: var(--tertiary);
 	padding: 30px;
 	margin: 40px 0 90px 0;
+	width: 100%;
 }
 
 .designed {
